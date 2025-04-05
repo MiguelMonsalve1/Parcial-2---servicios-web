@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBExamenModelStoreContainer" CdmEntityContainer="DBExamenEntities1">
+    <EntitySetMapping Name="Camion">
+      <EntityTypeMapping TypeName="DBExamenModel.Camion">
+        <MappingFragment StoreEntitySet="Camion">
+          <ScalarProperty Name="Placa" ColumnName="Placa" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="NumeroEjes" ColumnName="NumeroEjes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FotoPesaje">
+      <EntityTypeMapping TypeName="DBExamenModel.FotoPesaje">
+        <MappingFragment StoreEntitySet="FotoPesaje">
+          <ScalarProperty Name="idFotoPesaje" ColumnName="idFotoPesaje" />
+          <ScalarProperty Name="ImagenVehiculo" ColumnName="ImagenVehiculo" />
+          <ScalarProperty Name="idPesaje" ColumnName="idPesaje" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pesaje">
+      <EntityTypeMapping TypeName="DBExamenModel.Pesaje">
+        <MappingFragment StoreEntitySet="Pesaje">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="FechaPesaje" ColumnName="FechaPesaje" />
+          <ScalarProperty Name="PlacaCamion" ColumnName="PlacaCamion" />
+          <ScalarProperty Name="Peso" ColumnName="Peso" />
+          <ScalarProperty Name="Estacion" ColumnName="Estacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
